@@ -1,0 +1,22 @@
+<template>  
+  <lightning-card>
+    <lightning-layout>
+      <lightning-layout-item size="6">
+        <p style="color:blue; font-weight:bo; font-size:medium">Permanent Address</p>
+        <p>Enter permanent address as govid proof</p>
+        <lightning-input data-name="perAdd1" title="Address Line 1" label="Address Line 1" placeholder="Address Line 1"></lightning-input>  
+        <lightning-input data-name="perAdd2" title="Address Line 2" label="Address Line 2" placeholder="Address Line 2"></lightning-input>  
+        <lightning-input data-name="perLm" title="Landmark" label="Landmark" placeholder="Landmark"></lightning-input>  
+        <lightning-input data-name="perZc" title="Zip Code" label="Zip Code" placeholder="Zip Code"></lightning-input>  
+      </lightning-layout-item>     
+      <lightning-layout-item size="6">
+        <p style="color:blue; font-weight:bo; font-size:medium">Current Address</p>
+        <lightning-input type="checkbox" label="Same as permanent address" onchange={checkboxHandler}></lightning-input>
+        <lightning-input data-name="curAdd1" title="Address Line 1" label="Address Line 1" placeholder="Address Line 1"></lightning-input>  
+        <lightning-input data-name="curAdd2" title="Address Line 2" label="Address Line 2" placeholder="Address Line 2"></lightning-input>  
+        <lightning-input data-name="curLm" title="Landmark" label="Landmark" placeholder="Landmark"></lightning-input>  
+        <lightning-input data-name="curZc" title="Zip Code" label="Zip Code" placeholder="Zip Code"></lightning-input>    
+      </lightning-layout-item>  
+    </lightning-layout>
+  </lightning-card>
+</template>
